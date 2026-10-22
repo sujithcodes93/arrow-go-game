@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Go</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div class="game-wrap">
+      <header class="topbar">
+        <div class="title-wrap">
+          <div class="brand-mark">✦</div>
+          <div>
+            <p class="eyebrow">Arrow Go</p>
+            <h1>Color Quest</h1>
+          </div>
+        </div>
+        <div class="badge" id="level-badge">Level 1</div>
+      </header>
+
+      <div class="status-panel">
+        <div>
+          <span>Progress</span>
+          <strong id="goal-status">0 / 0</strong>
+        </div>
+        <div>
+          <span>Stage</span>
+          <strong id="level-name">Sunrise Sprint</strong>
+        </div>
+      </div>
+
+      <div class="board-frame">
+        <div id="board" class="board" aria-label="Game board"></div>
+      </div>
+
+      <div class="controls">
+        <button id="restart-btn" type="button">Restart</button>
+        <button id="next-btn" type="button">Next level</button>
+      </div>
+
+      <p id="message" class="message">Use the arrow keys to move.</p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
